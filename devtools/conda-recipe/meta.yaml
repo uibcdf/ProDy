@@ -1,0 +1,35 @@
+package:
+  name: prody
+  version: 1.11
+
+source:
+  path: ../../
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python {{ python }}
+    - setuptools
+    - numpy
+
+  run:
+    - python  {{ python }}
+    - numpy
+    - biopython
+    - pyparsing
+    - scipy
+    - h5py
+    - scikit-learn
+    - matplotlib
+
+about:
+  home: http://prody.csb.pitt.edu/
+  license: 'https://github.com/prody/ProDy/blob/master/LICENSE.rst'
+  summary: "This is a copy of https://github.com/prody/ProDy built here to be installed with conda."
+  description: |
+        This is a copy of https://github.com/prody/ProDy built here to be installed with conda.
+  dev_url: https://github.com/prody/ProDy 
+  doc_url: http://prody.csb.pitt.edu/
+
